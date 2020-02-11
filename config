@@ -1,0 +1,6 @@
+export IMG_NAME="AstroPlant-1.0.0b4"
+export DEPLOY_ZIP="1"
+export USE_QEMU="0"
+export TARGET_HOSTNAME="astroplant-kit"
+export ENABLE_SSH="1"
+export STAGE_LIST="stage0 stage1 stage2 stageastroplant0 stageastroplant1"
