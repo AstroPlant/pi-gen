@@ -1,0 +1,13 @@
+Index: buster-stageastroplant/rootfs/etc/dhcpcd.conf
+===================================================================
+--- buster-stageastroplant.orig/rootfs/etc/dhcpcd.conf
++++ buster-stageastroplant/rootfs/etc/dhcpcd.conf
+@@ -30,7 +30,7 @@
+ option interface_mtu
+ 
+ # Most distributions have NTP support.
+-#option ntp_servers
++option ntp_servers
+ 
+ # A ServerID is required by RFC2131.
+ require dhcp_server_identifier

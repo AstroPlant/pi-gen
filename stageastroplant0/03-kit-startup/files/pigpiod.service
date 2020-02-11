@@ -1,0 +1,9 @@
+[Unit]
+Description=PiGPIOd Service
+
+[Service]
+ExecStart=pigpiod
+Type=forking
+StandardOutput=inherit
+StandardError=inherit
+User=root

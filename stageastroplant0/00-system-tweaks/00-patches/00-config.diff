@@ -1,0 +1,30 @@
+Index: buster-stageastroplant/rootfs/boot/config.txt
+===================================================================
+--- buster-stageastroplant.orig/rootfs/boot/config.txt
++++ buster-stageastroplant/rootfs/boot/config.txt
+@@ -43,9 +43,9 @@
+ #arm_freq=800
+ 
+ # Uncomment some or all of these to enable the optional hardware interfaces
+-#dtparam=i2c_arm=on
++dtparam=i2c_arm=on
+ #dtparam=i2s=on
+-#dtparam=spi=on
++dtparam=spi=on
+ 
+ # Uncomment this to enable infrared communication.
+ #dtoverlay=gpio-ir,gpio_pin=17
+@@ -63,3 +63,13 @@
+
+ [all]
+ #dtoverlay=vc4-fkms-v3d
++
++# Camera
++start_x=1
++gpu_mem=128
++
++# 1-Wire
++dtoverlay=w1-gpio
++
++# Serial
++enable_uart=1

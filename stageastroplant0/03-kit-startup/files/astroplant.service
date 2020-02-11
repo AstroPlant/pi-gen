@@ -1,0 +1,17 @@
+[Unit]
+Description=AstroPlant Service
+After=network.target
+After=time-sync.target
+Requires=pigpiod.service
+After=pigpiod.service
+
+[Service]
+ExecStart=/home/pi/astroplant-kit-start.sh
+WorkingDirectory=/home/pi
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
