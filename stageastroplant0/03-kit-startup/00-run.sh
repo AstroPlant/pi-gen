@@ -8,3 +8,6 @@ install -v -m 744 --owner 1000 --group 1000 \
 
 ln -sf "${ROOTFS_DIR}/etc/systemd/system/astroplant.service" \
        "${ROOTFS_DIR}/etc/systemd/system/multi-user.target.wants/astroplant.service"
+
+ln -sf "${ROOTFS_DIR}/lib/systemd/system/systemd-time-wait-sync.service" \
+       "${ROOTFS_DIR}/etc/systemd/system/sysinit.target.wants/systemd-time-wait-sync.service"
