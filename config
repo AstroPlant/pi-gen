@@ -1,4 +1,4 @@
-export IMG_NAME="AstroPlant-1.0.0b6"
+export IMG_NAME="AstroPlant-1.0.0b7"
 export DEPLOY_ZIP="1"
 export USE_QEMU="0"
 export TARGET_HOSTNAME="astroplant-kit"
