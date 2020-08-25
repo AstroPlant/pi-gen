@@ -2,3 +2,7 @@ git
 python3-pip
 libcapnp-dev
 pigpio
+libpng12-dev
+libatlas-base-dev
+libopenjp2-7-dev
+libtiff-dev
